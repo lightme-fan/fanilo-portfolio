@@ -1,0 +1,25 @@
+{
+  "name": "fanilo-portfolio",
+  "version": "1.0.0",
+  "description": "This is my portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lightme-fan/fanilo-portfolio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lightme-fan/fanilo-portfolio/issues"
+  },
+  "homepage": "https://github.com/lightme-fan/fanilo-portfolio#readme",
+  "dependencies": {
+    "date-fns": "^2.16.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-router-dom": "^5.2.0"
+  }
+}
