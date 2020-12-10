@@ -1,0 +1,54 @@
+.profile {
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 30% 1fr;
+    gap: 22px;
+}
+
+.profile--heading_contact {
+    margin-top: 1rem;
+}
+
+.profile--heading_text {
+    margin: 0;
+}
+
+.profile--heading_text {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.profile--heading_text > small {
+    opacity: 0.5;
+}
+
+.profile--heading_email {
+    background-image: url('../icons/mail.svg');
+    background-repeat: no-repeat;
+    background-size: 13%;
+    padding-left: 2rem;
+}
+
+.profile--heading_phone-number {
+    background-image: url('../icons/contact.svg');
+    background-repeat: no-repeat;
+    background-size: 12%;
+    padding-left: 2rem;
+}
+
+@media (min-width: 665px) {
+    .profile--heading {
+        display: flex;
+        justify-content: space-between;
+    }   
+    
+    .profile--heading_contact {
+        margin-top: 0;
+    }
+    
+    .profile--desc {
+        margin-top: 0;
+        align-self: center;
+    }
+}

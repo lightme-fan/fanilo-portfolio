@@ -1,0 +1,20 @@
+.languages {
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+.languages--heading {
+    margin: 0;
+    padding: 0;
+}
+
+.languages--list {
+    padding: 0;
+    list-style: none;
+}
+
+.languages--list_item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 1rem;
+}

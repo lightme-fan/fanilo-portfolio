@@ -1,0 +1,21 @@
+.project-demo {
+    background-color: #5C94E1;
+    color: #ffffff;
+}
+
+.screenshot {
+    height: 400px
+}
+
+@media (min-width: 665px) {
+    .project--list {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 30px;
+    }
+    
+    .screenshot {
+        height: 240px
+    }
+    
+}

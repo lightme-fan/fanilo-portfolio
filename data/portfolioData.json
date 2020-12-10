@@ -1,0 +1,30 @@
+[
+    {
+        "id": "1607603144572",
+        "title": "Photograph",
+        "imageUrl": "https://bit.ly/3oMPSdY",
+        "githubLink": "https://github.com/lightme-fan/front-end-finals",
+        "demoLink": "https://fanilo-photograph.netlify.app/",
+        "build_with": "#HTML #CSS #responsive",
+        "description": "In this project, I work with HTML and CSS to create a responsive page. This page is similiar with a page. The design is from devchallenge.io",
+
+    },
+    {
+        "id": "1607630611060",
+        "title": "Country quiz",
+        "imageUrl": "https://bit.ly/3mix1W9",
+        "githubLink": "https://github.com/lightme-fan/country-quiz",
+        "demoLink": "https://lightme-fan-country-quiz.netlify.app/",
+        "build_with": "react",
+        "description": "In this project, I work with react and sass a responsive page. This page is similiar with a page. The design is from devchallenge.io",
+    },
+    {
+        "id": "1607603144572",
+        "title": "Birthday App",
+        "imageUrl": "https://bit.ly/3qLEa53",
+        "githubLink": "https://github.com/lightme-fan/birthday-app",
+        "demoLink": "https://fanilo-birthday-app.netlify.app/",
+        "build_with": "js",
+        "description": "In this project, I work with Javascript.",
+    }    
+]
