@@ -7,7 +7,20 @@
     height: 400px
 }
 
-@media (min-width: 665px) {
+@media (min-width: 600px) {
+    .project--list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+    
+    .screenshot {
+        height: 240px
+    }
+    
+}
+
+@media (min-width: 820px) {
     .project--list {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;

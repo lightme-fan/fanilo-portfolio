@@ -29772,296 +29772,7 @@ if ("development" === 'production') {
 } else {
   module.exports = require('./cjs/react-dom.development.js');
 }
-},{"./cjs/react-dom.development.js":"node_modules/react-dom/cjs/react-dom.development.js"}],"images/fanilo.png":[function(require,module,exports) {
-module.exports = "/fanilo.172614b5.png";
-},{}],"src/components/Profile.js":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = void 0;
-
-var _react = _interopRequireDefault(require("react"));
-
-var _fanilo = _interopRequireDefault(require("../../images/fanilo.png"));
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function Profile() {
-  return /*#__PURE__*/_react.default.createElement("section", {
-    className: "profile"
-  }, /*#__PURE__*/_react.default.createElement("img", {
-    className: "profile--photo",
-    src: _fanilo.default,
-    alt: "Profile photo"
-  }), /*#__PURE__*/_react.default.createElement("div", {
-    className: "profile--desc"
-  }, /*#__PURE__*/_react.default.createElement("header", {
-    className: "profile--heading"
-  }, /*#__PURE__*/_react.default.createElement("h2", {
-    className: "profile--heading_text"
-  }, "Tokiniaina Fanilo", /*#__PURE__*/_react.default.createElement("br", null), " ", /*#__PURE__*/_react.default.createElement("small", null, "Front-end developer")), /*#__PURE__*/_react.default.createElement("div", {
-    className: "profile--heading_contact"
-  }, /*#__PURE__*/_react.default.createElement("span", {
-    className: "profile--heading_email"
-  }, "fanilo.and@onja.org"), /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("span", {
-    className: "profile--heading_phone-number"
-  }, "+261 34 88 901 98"))), /*#__PURE__*/_react.default.createElement("div", {
-    className: "profile--text"
-  }, /*#__PURE__*/_react.default.createElement("p", {
-    className: "profile--text_first"
-  }, "Self-motivated developer, who is willing to learn and create outstanding UI applications."))));
-}
-
-var _default = Profile;
-exports.default = _default;
-},{"react":"node_modules/react/index.js","../../images/fanilo.png":"images/fanilo.png"}],"data/languageData.js":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = void 0;
-const languageData = [{
-  title: 'React',
-  id: 1,
-  studyProgress: '70%'
-}, {
-  title: 'Javascript',
-  id: 2,
-  studyProgress: '70%'
-}, {
-  title: 'CSS',
-  id: 3,
-  studyProgress: '70%'
-}, {
-  title: 'HTML',
-  id: 4,
-  studyProgress: '70%'
-}];
-var _default = languageData;
-exports.default = _default;
-},{}],"src/components/Languages.js":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = void 0;
-
-var _react = _interopRequireDefault(require("react"));
-
-var _languageData = _interopRequireDefault(require("../../data/languageData"));
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function Languages() {
-  return /*#__PURE__*/_react.default.createElement("section", {
-    className: "languages"
-  }, /*#__PURE__*/_react.default.createElement("h2", {
-    className: "languages--heading"
-  }, "Front end"), /*#__PURE__*/_react.default.createElement("ul", {
-    className: "languages--list"
-  }, _languageData.default.map(item => /*#__PURE__*/_react.default.createElement("li", {
-    className: "languages--list_item",
-    key: item.id
-  }, /*#__PURE__*/_react.default.createElement("label", {
-    className: "languages--list_label",
-    for: "file"
-  }, item.title), /*#__PURE__*/_react.default.createElement("progress", {
-    className: "languages--listprogress",
-    id: "file",
-    max: "100",
-    value: "70"
-  }, " ", item.studyProgress, " ")))));
-}
-
-var _default = Languages;
-exports.default = _default;
-},{"react":"node_modules/react/index.js","../../data/languageData":"data/languageData.js"}],"images/ball.jpg":[function(require,module,exports) {
-module.exports = "/ball.36fa0fcf.jpg";
-},{}],"images/guitar.jpg":[function(require,module,exports) {
-module.exports = "/guitar.8662e785.jpg";
-},{}],"data/hobbyData.js":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = void 0;
-
-var _ball = _interopRequireDefault(require("./../images/ball.jpg"));
-
-var _guitar = _interopRequireDefault(require("./../images/guitar.jpg"));
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-const hobbyData = [{
-  title: 'Playing guitar',
-  id: 1,
-  desc: 'Every time I am free, I play Guitar',
-  photo: _guitar.default
-}, {
-  title: 'Playing footBall',
-  id: 2,
-  desc: 'This my favorite hobby',
-  photo: _ball.default
-}];
-var _default = hobbyData;
-exports.default = _default;
-},{"./../images/ball.jpg":"images/ball.jpg","./../images/guitar.jpg":"images/guitar.jpg"}],"src/components/Hobbies.js":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = void 0;
-
-var _react = _interopRequireDefault(require("react"));
-
-var _hobbyData = _interopRequireDefault(require("../../data/hobbyData"));
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function Hobbies() {
-  const mapHobby = _hobbyData.default.map(hobby => /*#__PURE__*/_react.default.createElement("li", {
-    key: hobby.id
-  }, /*#__PURE__*/_react.default.createElement("img", {
-    src: hobby.photo,
-    alt: "Guitar"
-  }), /*#__PURE__*/_react.default.createElement("h3", null, hobby.title), /*#__PURE__*/_react.default.createElement("p", null, hobby.desc)));
-
-  return /*#__PURE__*/_react.default.createElement("section", {
-    className: "hobbies"
-  }, /*#__PURE__*/_react.default.createElement("h2", null, "Hobbies"), /*#__PURE__*/_react.default.createElement("ul", {
-    className: "list-hobbies"
-  }, mapHobby));
-}
-
-var _default = Hobbies;
-exports.default = _default;
-},{"react":"node_modules/react/index.js","../../data/hobbyData":"data/hobbyData.js"}],"images/blog.png":[function(require,module,exports) {
-module.exports = "/blog.90097583.png";
-},{}],"src/components/Blog.js":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = void 0;
-
-var _react = _interopRequireDefault(require("react"));
-
-var _blog = _interopRequireDefault(require("../../images/blog.png"));
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function Blog() {
-  return /*#__PURE__*/_react.default.createElement("section", {
-    className: "blog"
-  }, /*#__PURE__*/_react.default.createElement("a", {
-    href: "https://lightme-fan.github.io/blog/"
-  }, /*#__PURE__*/_react.default.createElement("h2", null, "Blog"), /*#__PURE__*/_react.default.createElement("img", {
-    src: _blog.default,
-    alt: "Blog"
-  }), /*#__PURE__*/_react.default.createElement("p", null, "In this article I tell the story about myself. You also can see few blog posts which you can have a look."), /*#__PURE__*/_react.default.createElement("div", null)));
-}
-
-var _default = Blog;
-exports.default = _default;
-},{"react":"node_modules/react/index.js","../../images/blog.png":"images/blog.png"}],"src/components/Experiences.js":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = void 0;
-
-var _react = _interopRequireDefault(require("react"));
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function Experiences() {
-  return /*#__PURE__*/_react.default.createElement("section", {
-    className: "experiences"
-  }, /*#__PURE__*/_react.default.createElement("h2", null, "Experiences"), /*#__PURE__*/_react.default.createElement("div", {
-    className: "experience--list"
-  }, /*#__PURE__*/_react.default.createElement("img", {
-    src: "",
-    alt: "Company"
-  }), /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("small", null, "Work Date"), /*#__PURE__*/_react.default.createElement("h3", null, "Job"), /*#__PURE__*/_react.default.createElement("p", null, "Job description"))), /*#__PURE__*/_react.default.createElement("div", {
-    className: "experience--list"
-  }, /*#__PURE__*/_react.default.createElement("img", {
-    src: "",
-    alt: "Company"
-  }), /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("small", null, "Work Date"), /*#__PURE__*/_react.default.createElement("h3", null, "Job"), /*#__PURE__*/_react.default.createElement("p", null, "Job description"))));
-}
-
-var _default = Experiences;
-exports.default = _default;
-},{"react":"node_modules/react/index.js"}],"src/components/ProjectTemplate.js":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = void 0;
-
-var _react = _interopRequireDefault(require("react"));
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function ProjectTemplate({
-  screenshot,
-  type,
-  title,
-  description,
-  url,
-  github
-}) {
-  return /*#__PURE__*/_react.default.createElement("section", null, /*#__PURE__*/_react.default.createElement("img", {
-    className: "screenshot",
-    src: screenshot,
-    alt: "Project"
-  }), /*#__PURE__*/_react.default.createElement("div", null, type), /*#__PURE__*/_react.default.createElement("h3", null, title), /*#__PURE__*/_react.default.createElement("p", null, description), /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("button", {
-    className: "project-demo"
-  }, /*#__PURE__*/_react.default.createElement("a", {
-    href: url
-  }, "Demo")), /*#__PURE__*/_react.default.createElement("button", null, /*#__PURE__*/_react.default.createElement("a", {
-    href: github
-  }, "Code"))));
-}
-
-var _default = ProjectTemplate;
-exports.default = _default;
-},{"react":"node_modules/react/index.js"}],"data/portfolioData.json":[function(require,module,exports) {
-module.exports = [{
-  "id": "1607603144572",
-  "title": "Photograph",
-  "imageUrl": "https://bit.ly/3oMPSdY",
-  "githubLink": "https://github.com/lightme-fan/front-end-finals",
-  "demoLink": "https://fanilo-photograph.netlify.app/",
-  "build_with": "#HTML #CSS #responsive",
-  "description": "In this project, I work with HTML and CSS to create a responsive page. This page is similiar with a page. The design is from devchallenge.io"
-}, {
-  "id": "1607630611060",
-  "title": "Country quiz",
-  "imageUrl": "https://bit.ly/3mix1W9",
-  "githubLink": "https://github.com/lightme-fan/country-quiz",
-  "demoLink": "https://lightme-fan-country-quiz.netlify.app/",
-  "build_with": "react",
-  "description": "In this project, I work with react and sass a responsive page. This page is similiar with a page. The design is from devchallenge.io"
-}, {
-  "id": "1607603144572",
-  "title": "Birthday App",
-  "imageUrl": "https://bit.ly/3qLEa53",
-  "githubLink": "https://github.com/lightme-fan/birthday-app",
-  "demoLink": "https://fanilo-birthday-app.netlify.app/",
-  "build_with": "js",
-  "description": "In this project, I work with Javascript."
-}];
-},{}],"node_modules/@babel/runtime/helpers/esm/inheritsLoose.js":[function(require,module,exports) {
+},{"./cjs/react-dom.development.js":"node_modules/react-dom/cjs/react-dom.development.js"}],"node_modules/@babel/runtime/helpers/esm/inheritsLoose.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -34142,7 +33853,310 @@ if ("development" !== "production") {
     style: _propTypes.default.object
   });
 }
-},{"react-router":"node_modules/react-router/esm/react-router.js","@babel/runtime/helpers/esm/inheritsLoose":"node_modules/@babel/runtime/helpers/esm/inheritsLoose.js","react":"node_modules/react/index.js","history":"node_modules/history/esm/history.js","prop-types":"node_modules/prop-types/index.js","tiny-warning":"node_modules/tiny-warning/dist/tiny-warning.esm.js","@babel/runtime/helpers/esm/extends":"node_modules/@babel/runtime/helpers/esm/extends.js","@babel/runtime/helpers/esm/objectWithoutPropertiesLoose":"node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js","tiny-invariant":"node_modules/tiny-invariant/dist/tiny-invariant.esm.js"}],"src/components/ContextProvider.js":[function(require,module,exports) {
+},{"react-router":"node_modules/react-router/esm/react-router.js","@babel/runtime/helpers/esm/inheritsLoose":"node_modules/@babel/runtime/helpers/esm/inheritsLoose.js","react":"node_modules/react/index.js","history":"node_modules/history/esm/history.js","prop-types":"node_modules/prop-types/index.js","tiny-warning":"node_modules/tiny-warning/dist/tiny-warning.esm.js","@babel/runtime/helpers/esm/extends":"node_modules/@babel/runtime/helpers/esm/extends.js","@babel/runtime/helpers/esm/objectWithoutPropertiesLoose":"node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js","tiny-invariant":"node_modules/tiny-invariant/dist/tiny-invariant.esm.js"}],"images/ball.jpg":[function(require,module,exports) {
+module.exports = "/ball.36fa0fcf.jpg";
+},{}],"src/components/Profile.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+var _ball = _interopRequireDefault(require("../../images/ball.jpg"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function Profile() {
+  return /*#__PURE__*/_react.default.createElement("section", {
+    className: "profile"
+  }, /*#__PURE__*/_react.default.createElement("img", {
+    className: "profile--photo",
+    src: _ball.default,
+    alt: "Profile photo"
+  }), /*#__PURE__*/_react.default.createElement("div", {
+    className: "profile--desc"
+  }, /*#__PURE__*/_react.default.createElement("header", {
+    className: "profile--heading"
+  }, /*#__PURE__*/_react.default.createElement("h2", {
+    className: "profile--heading_text"
+  }, "Tokiniaina Fanilo", /*#__PURE__*/_react.default.createElement("br", null), " ", /*#__PURE__*/_react.default.createElement("small", null, "Front-end developer")), /*#__PURE__*/_react.default.createElement("div", {
+    className: "profile--heading_contact"
+  }, /*#__PURE__*/_react.default.createElement("span", {
+    className: "profile--heading_email"
+  }, "fanilo.and@onja.org"), /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("span", {
+    className: "profile--heading_phone-number"
+  }, "+261 34 88 901 98"))), /*#__PURE__*/_react.default.createElement("div", {
+    className: "profile--text"
+  }, /*#__PURE__*/_react.default.createElement("p", {
+    className: "profile--text_first"
+  }, "Self-motivated developer, who is willing to learn and create outstanding UI applications."))));
+}
+
+var _default = Profile;
+exports.default = _default;
+},{"react":"node_modules/react/index.js","../../images/ball.jpg":"images/ball.jpg"}],"src/data/languageData.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+const languageData = [{
+  title: 'React',
+  id: 1,
+  studyProgress: '70%'
+}, {
+  title: 'Javascript',
+  id: 2,
+  studyProgress: '70%'
+}, {
+  title: 'CSS',
+  id: 3,
+  studyProgress: '70%'
+}, {
+  title: 'HTML',
+  id: 4,
+  studyProgress: '70%'
+}];
+var _default = languageData;
+exports.default = _default;
+},{}],"src/components/Languages.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+var _languageData = _interopRequireDefault(require("../data/languageData"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function Languages() {
+  return /*#__PURE__*/_react.default.createElement("section", {
+    className: "languages"
+  }, /*#__PURE__*/_react.default.createElement("h2", {
+    className: "languages--heading"
+  }, "Front end"), /*#__PURE__*/_react.default.createElement("ul", {
+    className: "languages--list"
+  }, _languageData.default.map(item => /*#__PURE__*/_react.default.createElement("li", {
+    className: "languages--list_item",
+    key: item.id
+  }, /*#__PURE__*/_react.default.createElement("label", {
+    className: "languages--list_label",
+    htmlFor: "file"
+  }, item.title), /*#__PURE__*/_react.default.createElement("progress", {
+    className: "languages--listprogress",
+    id: "file",
+    max: "100",
+    value: "70"
+  }, " ", item.studyProgress, " ")))));
+}
+
+var _default = Languages;
+exports.default = _default;
+},{"react":"node_modules/react/index.js","../data/languageData":"src/data/languageData.js"}],"images/guitar.jpg":[function(require,module,exports) {
+module.exports = "/guitar.8662e785.jpg";
+},{}],"src/data/hobbyData.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _ball = _interopRequireDefault(require("../../images/ball.jpg"));
+
+var _guitar = _interopRequireDefault(require("../../images/guitar.jpg"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+const hobbyData = [{
+  title: 'Playing guitar',
+  id: 1,
+  desc: 'Every time I am free, I play Guitar',
+  photo: _guitar.default
+}, {
+  title: 'Playing footBall',
+  id: 2,
+  desc: 'This my favorite hobby',
+  photo: _ball.default
+}];
+var _default = hobbyData;
+exports.default = _default;
+},{"../../images/ball.jpg":"images/ball.jpg","../../images/guitar.jpg":"images/guitar.jpg"}],"src/components/Hobbies.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+var _hobbyData = _interopRequireDefault(require("../data/hobbyData"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function Hobbies() {
+  const mapHobby = _hobbyData.default.map(hobby => /*#__PURE__*/_react.default.createElement("li", {
+    key: hobby.id
+  }, /*#__PURE__*/_react.default.createElement("img", {
+    src: hobby.photo,
+    alt: "Guitar"
+  }), /*#__PURE__*/_react.default.createElement("h3", null, hobby.title), /*#__PURE__*/_react.default.createElement("p", null, hobby.desc)));
+
+  return /*#__PURE__*/_react.default.createElement("section", {
+    className: "hobbies"
+  }, /*#__PURE__*/_react.default.createElement("h2", null, "Hobbies"), /*#__PURE__*/_react.default.createElement("ul", {
+    className: "list-hobbies"
+  }, mapHobby));
+}
+
+var _default = Hobbies;
+exports.default = _default;
+},{"react":"node_modules/react/index.js","../data/hobbyData":"src/data/hobbyData.js"}],"images/blog.png":[function(require,module,exports) {
+module.exports = "/blog.90097583.png";
+},{}],"src/components/Blog.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+var _blog = _interopRequireDefault(require("../../images/blog.png"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function Blog() {
+  return /*#__PURE__*/_react.default.createElement("section", {
+    className: "blog"
+  }, /*#__PURE__*/_react.default.createElement("a", {
+    href: "https://lightme-fan.github.io/blog/"
+  }, /*#__PURE__*/_react.default.createElement("h2", null, "Blog"), /*#__PURE__*/_react.default.createElement("img", {
+    src: _blog.default,
+    alt: "Blog"
+  }), /*#__PURE__*/_react.default.createElement("p", null, "In this article I tell the story about myself. You also can see few blog posts which you can have a look."), /*#__PURE__*/_react.default.createElement("div", null)));
+}
+
+var _default = Blog;
+exports.default = _default;
+},{"react":"node_modules/react/index.js","../../images/blog.png":"images/blog.png"}],"src/components/Experiences.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function Experiences() {
+  return /*#__PURE__*/_react.default.createElement("section", {
+    className: "experiences"
+  }, /*#__PURE__*/_react.default.createElement("h2", null, "Experiences"), /*#__PURE__*/_react.default.createElement("div", {
+    className: "experience--list"
+  }, /*#__PURE__*/_react.default.createElement("img", {
+    src: "",
+    alt: "Company"
+  }), /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("small", null, "Work Date"), /*#__PURE__*/_react.default.createElement("h3", null, "Job"), /*#__PURE__*/_react.default.createElement("p", null, "Job description"))), /*#__PURE__*/_react.default.createElement("div", {
+    className: "experience--list"
+  }, /*#__PURE__*/_react.default.createElement("img", {
+    src: "",
+    alt: "Company"
+  }), /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("small", null, "Work Date"), /*#__PURE__*/_react.default.createElement("h3", null, "Job"), /*#__PURE__*/_react.default.createElement("p", null, "Job description"))));
+}
+
+var _default = Experiences;
+exports.default = _default;
+},{"react":"node_modules/react/index.js"}],"src/components/ProjectTemplate.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function ProjectTemplate({
+  imageUrl,
+  build_with,
+  title,
+  description,
+  demoLink,
+  githubLink
+}) {
+  return /*#__PURE__*/_react.default.createElement("section", null, /*#__PURE__*/_react.default.createElement("img", {
+    className: "screenshot",
+    src: imageUrl,
+    alt: "Project"
+  }), /*#__PURE__*/_react.default.createElement("div", null, build_with), /*#__PURE__*/_react.default.createElement("h3", null, title), /*#__PURE__*/_react.default.createElement("p", null, description), /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("button", {
+    className: "project-demo"
+  }, /*#__PURE__*/_react.default.createElement("a", {
+    href: demoLink
+  }, "Demo")), /*#__PURE__*/_react.default.createElement("button", null, /*#__PURE__*/_react.default.createElement("a", {
+    href: githubLink
+  }, "Code"))));
+}
+
+var _default = ProjectTemplate;
+exports.default = _default;
+},{"react":"node_modules/react/index.js"}],"projects.json":[function(require,module,exports) {
+module.exports = [{
+  "id": "1607603144572",
+  "title": "Photograph",
+  "imageUrl": "https://bit.ly/349KLfH",
+  "githubLink": "https://github.com/lightme-fan/front-end-finals",
+  "demoLink": "https://fanilo-photograph.netlify.app/",
+  "build_with": "#HTML #SCSS #responsive",
+  "description": "In this project, I work with HTML and SCSS to create a responsive page. This page is similiar with a page. The design is from devchallenge.io"
+}, {
+  "id": "1607637638378",
+  "title": "Interior Consultant",
+  "imageUrl": "https://bit.ly/3ntRt8h",
+  "githubLink": "https://github.com/lightme-fan/interior-consultant",
+  "demoLink": "https://lightme-fan-interior-consultant.netlify.app/",
+  "build_with": "#HTML #SCSS #responsive",
+  "description": "In this project, I work with HTML and SCSS to create a responsive page. This page is similiar with a page. The design is from devchallenge.io"
+}, {
+  "id": "1607637360326",
+  "title": "Birthday App",
+  "imageUrl": "https://bit.ly/3qLEa53",
+  "githubLink": "https://github.com/lightme-fan/birthday-app",
+  "demoLink": "https://fanilo-birthday-app.netlify.app/",
+  "build_with": "Vanila js",
+  "description": "In this project, I work with vanila Javascript."
+}, {
+  "id": "1607630611060",
+  "title": "Country quiz",
+  "imageUrl": "https://bit.ly/3mix1W9",
+  "githubLink": "https://github.com/lightme-fan/country-quiz",
+  "demoLink": "https://lightme-fan-country-quiz.netlify.app/",
+  "build_with": "React",
+  "description": "In this project, I work with react and sass a responsive page. This page is similiar devchallenge.io"
+}, {
+  "id": "1607647684097",
+  "title": "Tea Time Topic",
+  "imageUrl": "https://bit.ly/3qTgdc2",
+  "githubLink": "https://github.com/lightme-fan/react-tea-time-topic",
+  "demoLink": "https://fanilo-tea-time-topic.netlify.app/",
+  "build_with": "React",
+  "description": "In this project, I work with react and css a responsive page."
+}];
+},{}],"src/components/ContextProvider.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -34153,7 +34167,9 @@ exports.Context = void 0;
 
 var _react = _interopRequireWildcard(require("react"));
 
-var _portfolioData = require("../../data/portfolioData.json");
+var _projects = _interopRequireDefault(require("../../projects.json"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function () { return cache; }; return cache; }
 
@@ -34166,19 +34182,16 @@ function ContextProvider({
   children
 }) {
   const [portfolios, setPortfolios] = (0, _react.useState)([]);
-  (0, _react.useEffect)(async () => {
-    const response = await fetch(_portfolioData.portfolioData);
-    const data = await response.json();
-    setPortfolios(data);
+  (0, _react.useEffect)(() => {
+    setPortfolios(_projects.default);
   }, []);
-  console.log(_portfolioData.portfolioData);
   return /*#__PURE__*/_react.default.createElement(Context.Provider, {
     value: {
       portfolios
     }
   }, children);
 }
-},{"react":"node_modules/react/index.js","../../data/portfolioData.json":"data/portfolioData.json"}],"src/components/Projects.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","../../projects.json":"projects.json"}],"src/components/Projects.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -34189,8 +34202,6 @@ exports.default = void 0;
 var _react = _interopRequireWildcard(require("react"));
 
 var _ProjectTemplate = _interopRequireDefault(require("./ProjectTemplate"));
-
-var _portfolioData = require("../../data/portfolioData.json");
 
 var _reactRouterDom = require("react-router-dom");
 
@@ -34208,17 +34219,16 @@ function Projects() {
   const {
     portfolios
   } = (0, _react.useContext)(_ContextProvider.Context);
-  console.log(portfolios);
-  const cssData = portfolios.filter(item => item.build_with === '#HTML #CSS #responsive');
-  const jsData = portfolios.filter(item => item.build_with === 'js');
-  const reactData = portfolios.filter(item => item.build_with === 'react');
-  return /*#__PURE__*/_react.default.createElement(_reactRouterDom.BrowserRouter, null, /*#__PURE__*/_react.default.createElement("section", null, /*#__PURE__*/_react.default.createElement("h2", null, "Project"), /*#__PURE__*/_react.default.createElement("button", null, /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
+  const cssData = portfolios.filter(item => item.build_with === '#HTML #SCSS #responsive');
+  const jsData = portfolios.filter(item => item.build_with === 'Vanila js');
+  const reactData = portfolios.filter(item => item.build_with === 'React');
+  return /*#__PURE__*/_react.default.createElement(_reactRouterDom.BrowserRouter, null, /*#__PURE__*/_react.default.createElement("section", null, /*#__PURE__*/_react.default.createElement("h2", null, "Project"), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
     to: "/"
-  }, "Html and CSS")), /*#__PURE__*/_react.default.createElement("button", null, /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
+  }, /*#__PURE__*/_react.default.createElement("button", null, "Html and CSS")), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
     to: "/js"
-  }, "Javascript")), /*#__PURE__*/_react.default.createElement("button", null, /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
+  }, /*#__PURE__*/_react.default.createElement("button", null, "Javascript")), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
     to: "/react"
-  }, "React"))), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Switch, null, /*#__PURE__*/_react.default.createElement(_reactRouterDom.Route, {
+  }, /*#__PURE__*/_react.default.createElement("button", null, "React"))), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Switch, null, /*#__PURE__*/_react.default.createElement(_reactRouterDom.Route, {
     exact: true,
     path: "/"
   }, /*#__PURE__*/_react.default.createElement("div", {
@@ -34242,7 +34252,7 @@ function Projects() {
 
 var _default = Projects;
 exports.default = _default;
-},{"react":"node_modules/react/index.js","./ProjectTemplate":"src/components/ProjectTemplate.js","../../data/portfolioData.json":"data/portfolioData.json","react-router-dom":"node_modules/react-router-dom/esm/react-router-dom.js","./ContextProvider":"src/components/ContextProvider.js"}],"src/components/App.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","./ProjectTemplate":"src/components/ProjectTemplate.js","react-router-dom":"node_modules/react-router-dom/esm/react-router-dom.js","./ContextProvider":"src/components/ContextProvider.js"}],"src/components/App.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -34284,6 +34294,8 @@ var _react = _interopRequireDefault(require("react"));
 
 var _reactDom = _interopRequireDefault(require("react-dom"));
 
+var _reactRouterDom = require("react-router-dom");
+
 var _App = _interopRequireDefault(require("./components/App"));
 
 var _ContextProvider = require("./components/ContextProvider");
@@ -34291,7 +34303,7 @@ var _ContextProvider = require("./components/ContextProvider");
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 _reactDom.default.render( /*#__PURE__*/_react.default.createElement(_ContextProvider.ContextProvider, null, /*#__PURE__*/_react.default.createElement(_App.default, null)), document.getElementById('root'));
-},{"react":"node_modules/react/index.js","react-dom":"node_modules/react-dom/index.js","./components/App":"src/components/App.js","./components/ContextProvider":"src/components/ContextProvider.js"}],"../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","react-dom":"node_modules/react-dom/index.js","react-router-dom":"node_modules/react-router-dom/esm/react-router-dom.js","./components/App":"src/components/App.js","./components/ContextProvider":"src/components/ContextProvider.js"}],"../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -34319,7 +34331,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53575" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54364" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

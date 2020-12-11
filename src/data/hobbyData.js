@@ -1,5 +1,5 @@
-import ball from './../images/ball.jpg'
-import guitar from './../images/guitar.jpg'
+import ball from '../../images/ball.jpg'
+import guitar from '../../images/guitar.jpg'
 
 const hobbyData = [
     {

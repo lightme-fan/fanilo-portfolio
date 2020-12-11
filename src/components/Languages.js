@@ -1,5 +1,5 @@
 import React from 'react'
-import languageData from '../../data/languageData'
+import languageData from '../data/languageData'
 
 
 function Languages() {
@@ -9,7 +9,7 @@ function Languages() {
             <ul className='languages--list'>
                 {languageData.map(item => 
                     <li className='languages--list_item' key={item.id}>
-                        <label className='languages--list_label' for="file">{item.title}</label>
+                        <label className='languages--list_label' htmlFor="file">{item.title}</label>
                         <progress className='languages--listprogress' id="file" max="100" value="70"> {item.studyProgress} </progress>
                     </li>    
                 )}

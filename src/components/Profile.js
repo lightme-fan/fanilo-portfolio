@@ -1,5 +1,5 @@
 import React from 'react'
-import fanilo from '../../images/fanilo.png'
+import fanilo from '../../images/ball.jpg'
 
 function Profile() {
     return (

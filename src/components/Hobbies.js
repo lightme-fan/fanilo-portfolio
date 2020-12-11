@@ -1,5 +1,5 @@
 import React from 'react'
-import hobbyData from '../../data/hobbyData' 
+import hobbyData from '../data/hobbyData' 
 
 function Hobbies() {
     const mapHobby = hobbyData.map(hobby => 

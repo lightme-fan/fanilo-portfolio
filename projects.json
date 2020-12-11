@@ -1,0 +1,49 @@
+[
+    {
+        "id": "1607603144572",
+        "title": "Photograph",
+        "imageUrl": "https://bit.ly/349KLfH",
+        "githubLink": "https://github.com/lightme-fan/front-end-finals",
+        "demoLink": "https://fanilo-photograph.netlify.app/",
+        "build_with": "#HTML #SCSS #responsive",
+        "description": "In this project, I work with HTML and SCSS to create a responsive page. This page is similiar with a page. The design is from devchallenge.io"
+
+    },
+    {
+        "id": "1607637638378",
+        "title": "Interior Consultant",
+        "imageUrl": "https://bit.ly/3ntRt8h",
+        "githubLink": "https://github.com/lightme-fan/interior-consultant",
+        "demoLink": "https://lightme-fan-interior-consultant.netlify.app/",
+        "build_with": "#HTML #SCSS #responsive",
+        "description": "In this project, I work with HTML and SCSS to create a responsive page. This page is similiar with a page. The design is from devchallenge.io"
+
+    },
+    {
+        "id": "1607637360326",
+        "title": "Birthday App",
+        "imageUrl": "https://bit.ly/3qLEa53",
+        "githubLink": "https://github.com/lightme-fan/birthday-app",
+        "demoLink": "https://fanilo-birthday-app.netlify.app/",
+        "build_with": "Vanila js",
+        "description": "In this project, I work with vanila Javascript."
+    },
+    {
+        "id": "1607630611060",
+        "title": "Country quiz",
+        "imageUrl": "https://bit.ly/3mix1W9",
+        "githubLink": "https://github.com/lightme-fan/country-quiz",
+        "demoLink": "https://lightme-fan-country-quiz.netlify.app/",
+        "build_with": "React",
+        "description": "In this project, I work with react and sass a responsive page. This page is similiar devchallenge.io"
+    },
+    {
+        "id": "1607647684097",
+        "title": "Tea Time Topic",
+        "imageUrl": "https://bit.ly/3qTgdc2",
+        "githubLink": "https://github.com/lightme-fan/react-tea-time-topic",
+        "demoLink": "https://fanilo-tea-time-topic.netlify.app/",
+        "build_with": "React",
+        "description": "In this project, I work with react and css a responsive page."
+    }    
+]

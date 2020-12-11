@@ -1,25 +1,23 @@
 import React, { useContext, useState } from 'react'
 import ProjectTemplate from './ProjectTemplate'
-import {portfolioData} from '../../data/portfolioData.json'
 import {BrowserRouter as Router, Link, Switch, Route } from 'react-router-dom';
 import { Context } from './ContextProvider';
 
 
 function Projects() {
     const { portfolios } = useContext(Context)
-    console.log(portfolios);
-
-    const cssData = portfolios.filter(item => item.build_with === '#HTML #CSS #responsive')
-    const jsData = portfolios.filter(item => item.build_with === 'js')
-    const reactData = portfolios.filter(item => item.build_with === 'react')
+    
+    const cssData = portfolios.filter(item => item.build_with === '#HTML #SCSS #responsive')
+    const jsData = portfolios.filter(item => item.build_with === 'Vanila js')
+    const reactData = portfolios.filter(item => item.build_with === 'React')
 
     return (
         <Router>
             <section>
                 <h2>Project</h2>
-                <button><Link to='/'>Html and CSS</Link></button>
-                <button><Link to='/js'>Javascript</Link></button>
-                <button><Link to='/react'>React</Link></button>
+                <Link to='/'><button>Html and CSS</button></Link>
+                <Link to='/js'><button>Javascript</button></Link>
+                <Link to='/react'><button>React</button></Link>
             </section>
             <Switch>
                 <Route exact path='/'>
