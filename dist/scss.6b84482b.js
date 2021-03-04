@@ -189,7 +189,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./..\\icons\\mail.svg":[["mail.1f83bf7a.svg","icons/mail.svg"],"icons/mail.svg"],"./..\\icons\\contact.svg":[["contact.6b7c20f4.svg","icons/contact.svg"],"icons/contact.svg"],"_css_loader":"../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./..\\icons\\mail.svg":[["mail.1f83bf7a.svg","icons/mail.svg"],"icons/mail.svg"],"./..\\icons\\contact.svg":[["contact.6b7c20f4.svg","icons/contact.svg"],"icons/contact.svg"],"./..\\icons\\menu-icon.svg":[["menu-icon.29f10b1f.svg","icons/menu-icon.svg"],"icons/menu-icon.svg"],"./..\\icons\\close-menu-icon.svg":[["close-menu-icon.84c0c3c8.svg","icons/close-menu-icon.svg"],"icons/close-menu-icon.svg"],"./..\\icons\\facebook-icon.svg":[["facebook-icon.ba7fb17c.svg","icons/facebook-icon.svg"],"icons/facebook-icon.svg"],"./..\\icons\\twitter-icon.svg":[["twitter-icon.f229f7a3.svg","icons/twitter-icon.svg"],"icons/twitter-icon.svg"],"./..\\icons\\github-icon.svg":[["github-icon.0a9e72e0.svg","icons/github-icon.svg"],"icons/github-icon.svg"],"_css_loader":"../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -217,7 +217,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54364" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53405" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

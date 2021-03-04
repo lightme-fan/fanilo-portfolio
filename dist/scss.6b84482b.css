@@ -1,5 +1,5 @@
 body {
-  background-color: #F2F2F2;
+  margin: 0;
 }
 
 article {
@@ -182,6 +182,39 @@ a {
   .screenshot {
     height: 240px;
   }
+}
+.modal-header {
+  padding-bottom: 164px;
+}
+
+.hidden-modal {
+  background-image: url("/menu-icon.29f10b1f.svg");
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: 50%;
+}
+
+.open-modal {
+  background-image: url("/close-menu-icon.84c0c3c8.svg");
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: 50%;
+}
+
+.facebook {
+  background-image: url("/facebook-icon.ba7fb17c.svg");
+  background-size: 58%;
+}
+
+.twitter {
+  background-image: url("/twitter-icon.f229f7a3.svg");
+  background-size: 74%;
+}
+
+.github {
+  background-image: url("/github-icon.0a9e72e0.svg");
+  background-size: 74%;
+  background-position: 100%;
 }
 
 /*# sourceMappingURL=/scss.6b84482b.css.map */
