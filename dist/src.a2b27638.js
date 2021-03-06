@@ -36319,7 +36319,7 @@ function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 
 const Wrapper = _styledComponents.default.div`
-    max-width: 1225px;
+    max-width: 1114px;
     margin: auto;
     padding: 1rem;
 
@@ -36340,6 +36340,7 @@ const Wrapper = _styledComponents.default.div`
     ul {
         display: flex;
         gap: 2%;
+        margin: 2.5rem 0;
     }
 
     li {
@@ -36350,18 +36351,50 @@ const Wrapper = _styledComponents.default.div`
             padding: 14px 1px;
         }
     }
+
+    li:nth-of-type(2) {
+        margin-top: 4px;    
+    }
+
+    li:nth-of-type(3) {
+        margin-top: -2px;
+    }
 `;
 const Frame = _styledComponents.default.div`
     text-align: center;
     margin: 5rem 0;
     margin-left: -11%;
+    grid-area: image;
+
+    @media (min-width: 500px) {
+        margin: 0;
+        margin-top: -6rem;
+    }
 `;
 const Image = _styledComponents.default.img`
-    width: 40%;
-    height: 40%;
+    max-width: 40%;
+    width: 100%;
     border-radius: 50%;
     box-shadow: 41px 15px 0px -7px rgba(6,47,150,0.72);
     -webkit-box-shadow: 41px 15px 0px -7px rgba(6,47,150,0.72);
+`;
+const MainContent = _styledComponents.default.div`
+    grid-area: mainContent;
+`;
+const Main = _styledComponents.default.div`
+    @media (min-width: 500px) {
+        margin-top: 6rem;
+        display: grid;
+        
+        .main-container {
+            height: 74vh;
+            display: grid;
+            grid-template-columns: 2fr 40%;
+            align-items: center;
+            grid-template-areas: "mainContent image";
+            gap: 10%;
+        }
+    }
 `;
 
 function Home() {
@@ -36370,10 +36403,12 @@ function Home() {
   } = (0, _react.useContext)(_ContextProvider.Context);
   return /*#__PURE__*/_react.default.createElement(Wrapper, null, /*#__PURE__*/_react.default.createElement(_Header.default, {
     showModal: showModal
-  }), /*#__PURE__*/_react.default.createElement(Frame, null, /*#__PURE__*/_react.default.createElement(Image, {
+  }), /*#__PURE__*/_react.default.createElement(Main, null, /*#__PURE__*/_react.default.createElement("div", {
+    className: "main-container"
+  }, /*#__PURE__*/_react.default.createElement(Frame, null, /*#__PURE__*/_react.default.createElement(Image, {
     src: "https://avatars.githubusercontent.com/u/60210180?s=460&u=4f917a503d9aa83ef8b1a75ba78f9223543d7743&v=4",
     alt: "Photo profile"
-  })), /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("h2", null, "Hello There!"), /*#__PURE__*/_react.default.createElement("p", null, "I am Fanilo and I love creating useful stuff. I am a Passionate Front-end Developer, react, redux, typescript and sass.")), /*#__PURE__*/_react.default.createElement("ul", null, /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("a", {
+  })), /*#__PURE__*/_react.default.createElement(MainContent, null, /*#__PURE__*/_react.default.createElement("h2", null, "Hello There!"), /*#__PURE__*/_react.default.createElement("p", null, "I am Fanilo and I love creating useful stuff. I am a Passionate Front-end Developer, react, redux, typescript and sass."), /*#__PURE__*/_react.default.createElement("ul", null, /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("a", {
     className: "facebook",
     href: "https://www.facebook.com/fanilo.tokiniaina/"
   }, "Facebook")), /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("a", {
@@ -36382,7 +36417,7 @@ function Home() {
   }, "Twitter")), /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("a", {
     className: "github",
     href: "https://github.com/lightme-fan"
-  }, "Github"))));
+  }, "Github")))))));
 }
 
 var _default = Home;
@@ -36482,7 +36517,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53405" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50024" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
